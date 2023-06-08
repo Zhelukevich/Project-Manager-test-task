@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import servicesReducer from './slice/servicesSlice';
+import userReducer from './slice/userSlice';
 
 export const store = configureStore({
   reducer: {
-    services: servicesReducer,
+    users: userReducer,
   },
   preloadedState: loadFromLocalStorage(),
 });
